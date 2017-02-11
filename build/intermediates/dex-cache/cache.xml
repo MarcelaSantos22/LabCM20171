@@ -3,6 +3,60 @@
 
     <item
         is-multidex="true"
+        jar="/export/estudiantes/ymarcela.quejada/LabCM20171/Lab1-UI/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="/export/estudiantes/ymarcela.quejada/LabCM20171/Lab1-UI/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.1.0_1cef91b9637e8c23a85029164a3379e5d63f7280/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/export/estudiantes/ymarcela.quejada/LabCM20171/Lab1-UI/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
+        <dex dex="/export/estudiantes/ymarcela.quejada/LabCM20171/Lab1-UI/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.1.0_88a5145109016946928f7690167583ddc79ff8e0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/export/estudiantes/ymarcela.quejada/LabCM20171/Lab1-UI/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="/export/estudiantes/ymarcela.quejada/LabCM20171/Lab1-UI/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.1.0_22281c57d6cebd7bc5a06e0ac453d2a99d499188/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/export/estudiantes/ymarcela.quejada/LabCM20171/Lab1-UI/build/intermediates/exploded-aar/com.android.support/transition/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
+        <dex dex="/export/estudiantes/ymarcela.quejada/LabCM20171/Lab1-UI/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.1.0_a99ebd0cf70ca9344d20ca6f9f0269fe30910cd0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/export/estudiantes/ymarcela.quejada/LabCM20171/Lab1-UI/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="17b1adbe85f0f5140671c05689d7316edf6de54e">
+        <dex dex="/export/estudiantes/ymarcela.quejada/LabCM20171/Lab1-UI/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_760a16c3dbe969686cc5aacc9df8b1d1b8d614b7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/export/estudiantes/ymarcela.quejada/LabCM20171/Lab1-UI/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="/export/estudiantes/ymarcela.quejada/LabCM20171/Lab1-UI/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.0_bdcb642d9c5ee09cc5f2656bfcbf58bc74679a88/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/export/estudiantes/ymarcela.quejada/AndroidStudioProjects/LabsCM201712/Lab1-UI/build/intermediates/exploded-aar/com.android.support/transition/25.1.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -27,6 +81,15 @@
         revision="25.0.2"
         sha1="aee64634871d88a419d59eb743c1258a60f19700">
         <dex dex="/export/estudiantes/ymarcela.quejada/AndroidStudioProjects/LabsCM201712/Lab1-UI/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.0_52b91f8f3256cbd6e5fd0b55100ac07eb9fbddde/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/export/estudiantes/ymarcela.quejada/LabCM20171/Lab1-UI/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="/export/estudiantes/ymarcela.quejada/LabCM20171/Lab1-UI/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.1.0_d4215bc00cf243ddbc3de865950951750557811a/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -57,12 +120,48 @@
     </item>
     <item
         is-multidex="true"
+        jar="/export/estudiantes/ymarcela.quejada/LabCM20171/Lab1-UI/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="/export/estudiantes/ymarcela.quejada/LabCM20171/Lab1-UI/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.1.0_107c145d7c13bca546bec85fae4a9bf13e83fd13/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/export/estudiantes/ymarcela.quejada/LabCM20171/Lab1-UI/build/intermediates/exploded-aar/com.android.support/design/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
+        <dex dex="/export/estudiantes/ymarcela.quejada/LabCM20171/Lab1-UI/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.1.0_1428c286a47ba3c5c72d9aaccfbaa9cf2690dc70/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/export/estudiantes/ymarcela.quejada/AndroidStudioProjects/LabsCM201712/Lab1-UI/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
         <dex dex="/export/estudiantes/ymarcela.quejada/AndroidStudioProjects/LabsCM201712/Lab1-UI/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.1.0_736ed17ef8cd75f1a7e8302cd77b076e822f5282/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/export/estudiantes/ymarcela.quejada/LabCM20171/Lab1-UI/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="/export/estudiantes/ymarcela.quejada/LabCM20171/Lab1-UI/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.0_af9e5a1db33909d336f4ff9d99559314c023d40b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/export/estudiantes/ymarcela.quejada/LabCM20171/Lab1-UI/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="/export/estudiantes/ymarcela.quejada/LabCM20171/Lab1-UI/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.1.0_651968c3a95306373f60a63b82aab44878b930b5/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -81,6 +180,24 @@
         revision="25.0.2"
         sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
         <dex dex="/export/estudiantes/ymarcela.quejada/AndroidStudioProjects/LabsCM201712/Lab1-UI/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.1.0_98b5c1b6734f58f62faa2389d3177f7318deb04c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/export/estudiantes/ymarcela.quejada/LabCM20171/Lab1-UI/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b7e235a91afeda7d9f88be1ac355b4f4d8018e8c">
+        <dex dex="/export/estudiantes/ymarcela.quejada/LabCM20171/Lab1-UI/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_17e771c7b69242979b59ead9fac805733c6734be/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/export/estudiantes/ymarcela.quejada/LabCM20171/Lab1-UI/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="/export/estudiantes/ymarcela.quejada/LabCM20171/Lab1-UI/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.1.0_ebf6fd81d6fd019825bbdf395e9cbf211bb7ed09/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -126,6 +243,15 @@
         revision="25.0.2"
         sha1="2f612055e98287faf72c96791abfc59effa77281">
         <dex dex="/export/estudiantes/ymarcela.quejada/AndroidStudioProjects/LabsCM201712/Lab1-UI/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_5d16675d826427acbfddea807d09f2f35e792c2b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/export/estudiantes/ymarcela.quejada/LabCM20171/Lab1-UI/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/export/estudiantes/ymarcela.quejada/LabCM20171/Lab1-UI/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.0_8174ade9aa7f3c587773c4e6d885af6221b9063e/classes.dex" />
     </item>
     <item
         is-multidex="true"

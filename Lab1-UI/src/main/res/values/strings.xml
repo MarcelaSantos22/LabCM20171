@@ -8,4 +8,6 @@
         <item>Universitario</item>
         <item>Otro</item>
     </string-array>
+    <string name="boy">Masculino</string>
+    <string name="girl">Femenino</string>
 </resources>

@@ -59,6 +59,18 @@ public class PersonalInfo extends AppCompatActivity implements DatePickerDialog.
 
                 Log.i("PersonalInfo","Mi nombre es: "+etName.getText().toString());
                 Log.i("PersonalInfo","Mi apellido es: "+etlastName.getText().toString());
+                Log.i("PersonalInfo","Mi fecha de nacimiento es: "+ mDateDisplay.getText().toString());
+
+                MainActivity.persona.setNombre(etName.getText().toString());
+                MainActivity.persona.setApellido(etlastName.getText().toString());
+                MainActivity.persona.setFechaDeNacimiento(mDateDisplay.getText().toString());
+                if(rbMale.isChecked()){
+                    MainActivity.persona.setSexo(getResources().getString(R.string.boy));
+                }else{
+                    MainActivity.persona.setSexo(getResources().getString(R.string.girl));
+                }
+                //TODO: Spinner escolaridad, Inicializar y obtener
+                //TODO: En vez de mostrar log, crear nueva actividad.
                 break;
 
         }

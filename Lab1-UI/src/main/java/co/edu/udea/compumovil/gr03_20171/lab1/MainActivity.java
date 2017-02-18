@@ -5,11 +5,15 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
+
+
+    static Persona persona;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,5 +52,54 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public  class Persona{
+        //TODO: Crear los campos faltantes
+         String  nombre;
+         String apellido;
+         String fechaDeNacimiento;
+         String sexo;
+         String escolaridad;
+
+        public String getNombre() {
+            return nombre;
+        }
+
+        public void setNombre(String nombre) {
+            this.nombre = nombre;
+        }
+
+        public String getApellido() {
+            return apellido;
+        }
+
+        public void setApellido(String apellido) {
+            this.apellido = apellido;
+        }
+
+        public String getFechaDeNacimiento() {
+            return fechaDeNacimiento;
+        }
+
+        public void setFechaDeNacimiento(String fechaDeNacimiento) {
+            this.fechaDeNacimiento = fechaDeNacimiento;
+        }
+
+        public String getSexo() {
+            return sexo;
+        }
+
+        public void setSexo(String sexo) {
+            this.sexo = sexo;
+        }
+
+        public String getEscolaridad() {
+            return escolaridad;
+        }
+
+        public void setEscolaridad(String escolaridad) {
+            this.escolaridad = escolaridad;
+        }
     }
 }

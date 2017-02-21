@@ -2,6 +2,7 @@ package co.edu.udea.compumovil.gr03_20171.lab1;
 
 import android.app.DatePickerDialog;
 import android.app.DialogFragment;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -24,7 +25,7 @@ public class PersonalInfo extends AppCompatActivity implements DatePickerDialog.
 
     private TextView mDateDisplay;;
     private AutoCompleteTextView countryAutoComplete;
-    private Spinner hobbieSpinner;
+    private Spinner escolaridadSpinner;
     private EditText etName;
     private EditText etlastName;
     private RadioButton rbMale;
@@ -47,6 +48,8 @@ public class PersonalInfo extends AppCompatActivity implements DatePickerDialog.
         etlastName=(EditText)findViewById(R.id.etApellido);
         rbMale=(RadioButton)findViewById(R.id.rbHombre);
         rbFemale=(RadioButton)findViewById(R.id.rbMujer);
+        escolaridadSpinner=(Spinner)findViewById(R.id.spnEscolaridad);
+
     }
     public void onClick(View v) {
 
@@ -57,10 +60,10 @@ public class PersonalInfo extends AppCompatActivity implements DatePickerDialog.
                 break;
             case R.id.btnNext:
 
-                Log.i("PersonalInfo","Mi nombre es: "+etName.getText().toString());
+              /*  Log.i("PersonalInfo","Mi nombre es: "+etName.getText().toString());
                 Log.i("PersonalInfo","Mi apellido es: "+etlastName.getText().toString());
-                Log.i("PersonalInfo","Mi fecha de nacimiento es: "+ mDateDisplay.getText().toString());
-
+                Log.i("PersonalInfo","Mi fecha de nacimiento es: "+ mDateDisplay.getText().toString());*/
+                //Inicializo las variables en el objeto estatico persona que se encuentra en el MainActivity.java
                 MainActivity.persona.setNombre(etName.getText().toString());
                 MainActivity.persona.setApellido(etlastName.getText().toString());
                 MainActivity.persona.setFechaDeNacimiento(mDateDisplay.getText().toString());
@@ -69,8 +72,10 @@ public class PersonalInfo extends AppCompatActivity implements DatePickerDialog.
                 }else{
                     MainActivity.persona.setSexo(getResources().getString(R.string.girl));
                 }
-                //TODO: Spinner escolaridad, Inicializar y obtener
-                //TODO: En vez de mostrar log, crear nueva actividad.
+                MainActivity.persona.setEscolaridad(escolaridadSpinner.getSelectedItem().toString());
+               //Va a la nueva actividad.
+                Intent intent = new Intent(PersonalInfo.this, ContactInfo.class);
+                startActivity(intent);
                 break;
 
         }

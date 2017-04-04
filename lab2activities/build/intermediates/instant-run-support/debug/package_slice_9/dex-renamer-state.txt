@@ -1,0 +1,4 @@
+#Mon Apr 03 23:08:32 COT 2017
+base.0=C\:\\Users\\admin\\Documents\\GitHub\\LabCM20171\\lab2activities\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_9
+renamed.0=classes.dex
+file.0=C\:\\Users\\admin\\Documents\\GitHub\\LabCM20171\\lab2activities\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_9\\classes.dex

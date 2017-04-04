@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.edu.udea.compumovil.gr03_20171.lab2activities.co.edu.udea.compumovil.gr03_20171.lab3.activities.LoginActivity"
+    android:weightSum="1"
+    android:background="@drawable/fondo2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical">
+        <ImageView android:id="@+id/tvIniciarSesion"
+            android:background="@drawable/ic_account_circle_black_24dp"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_weight="0.24" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/shape"
+            android:layout_weight="0.28"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <EditText android:id="@+id/etUserLogin"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:inputType="textPersonName"
+                android:hint="Usuario"
+                android:textColorHint="#ffffff"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="#9C2380"
+                android:typeface="serif"
+                android:padding="10dp"/>
+
+            <EditText android:id="@+id/etPasswordLogin"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textColorHint="#ffffff"
+                android:inputType="numberPassword"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="#9C2380"
+                android:hint="Contraseña"
+                android:padding="10dp"/>
+
+        </LinearLayout>
+
+        <Button android:id="@+id/btnIniciarSesion"
+            android:text="Iniciar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:typeface="serif"
+            android:onClick="onClickLogin"/>
+
+        <TextView android:id="@+id/tvRegistrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_subrayado_register"
+            android:textSize="18dp"
+            android:textColor="#ffffff"
+            android:layout_gravity="right"
+            android:clickable="true"
+            android:typeface="serif"
+            android:onClick="onClickLogin"
+            android:layout_marginBottom="30dp" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

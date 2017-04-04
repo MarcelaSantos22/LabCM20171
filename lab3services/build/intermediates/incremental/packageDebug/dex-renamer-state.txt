@@ -1,0 +1,7 @@
+#Mon Apr 03 23:13:42 COT 2017
+base.0=C\:\\Users\\admin\\Documents\\GitHub\\LabCM20171\\lab3services\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_43ebcebefa2f1bafce0450b5056538ebb81bfba0
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\admin\\Documents\\GitHub\\LabCM20171\\lab3services\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_5566c5a3b90104bfc0152103a8fcec753838b9d0\\classes.dex
+base.1=C\:\\Users\\admin\\Documents\\GitHub\\LabCM20171\\lab3services\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_5566c5a3b90104bfc0152103a8fcec753838b9d0
+file.0=C\:\\Users\\admin\\Documents\\GitHub\\LabCM20171\\lab3services\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_43ebcebefa2f1bafce0450b5056538ebb81bfba0\\classes.dex

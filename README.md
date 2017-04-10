@@ -1,2 +1,2 @@
-# LabCM20171
-Primer Lab. Comp. Móvil
+﻿# LabCM20171
+Laboratorios de Comp. Movil

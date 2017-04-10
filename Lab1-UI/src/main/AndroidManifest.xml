@@ -15,6 +15,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ContactInfo">
+            <intent-filter>
+                <action android:name="android.intent.action.CONTACTINFO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".OtherInfo">
+            <intent-filter>
+                <action android:name="android.intent.action.OTHERINFO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MostrarInfo">
+            <intent-filter>
+                <action android:name="android.intent.action.MOSTRARINFO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

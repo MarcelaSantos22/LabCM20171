@@ -2,103 +2,92 @@
 <instant-run
     abi="armeabi-v7a,armeabi"
     api-level="23"
-    build-mode="FULL"
+    build-mode="COLD"
     density="xhdpi"
     format="10"
     plugin-version="2.3.0"
-    timestamp="1491278890952"
-    token="839429840197938774"
-    verifier="FULL_BUILD_REQUESTED" >
+    timestamp="1491347161668"
+    token="7220448113145012423"
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="5346" />
+        duration="1043" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="1679" />
+        duration="31" />
     <task
         name="verifier"
-        duration="432" />
+        duration="6" />
 
     <artifact
-        location="C:\Users\admin\Documents\GitHub\LabCM20171\lab2activities\build\intermediates\split-apk\debug\dep\dependencies.apk"
+        location="C:\Users\admin\Documents\UdeA\CompMovil\LabCM20171\lab2activities\build\intermediates\split-apk\debug\slices\slice_4.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\admin\Documents\GitHub\LabCM20171\lab2activities\build\intermediates\split-apk\debug\slices\slice_0.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\admin\Documents\GitHub\LabCM20171\lab2activities\build\intermediates\split-apk\debug\slices\slice_1.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\admin\Documents\GitHub\LabCM20171\lab2activities\build\intermediates\split-apk\debug\slices\slice_3.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\admin\Documents\GitHub\LabCM20171\lab2activities\build\intermediates\split-apk\debug\slices\slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\admin\Documents\GitHub\LabCM20171\lab2activities\build\intermediates\split-apk\debug\slices\slice_6.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\admin\Documents\GitHub\LabCM20171\lab2activities\build\intermediates\split-apk\debug\slices\slice_4.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\admin\Documents\GitHub\LabCM20171\lab2activities\build\intermediates\split-apk\debug\slices\slice_5.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\admin\Documents\GitHub\LabCM20171\lab2activities\build\intermediates\split-apk\debug\slices\slice_7.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\admin\Documents\GitHub\LabCM20171\lab2activities\build\intermediates\split-apk\debug\slices\slice_8.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\admin\Documents\GitHub\LabCM20171\lab2activities\build\intermediates\split-apk\debug\slices\slice_9.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\admin\Documents\GitHub\LabCM20171\lab2activities\build\outputs\apk\lab2activities-debug.apk"
+        location="C:\Users\admin\Documents\UdeA\CompMovil\LabCM20171\lab2activities\build\outputs\apk\lab2activities-debug.apk"
         type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1491278890952"
+        timestamp="1491346361771"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Users\admin\Documents\GitHub\LabCM20171\lab2activities\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            location="C:\Users\admin\Documents\UdeA\CompMovil\LabCM20171\lab2activities\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\admin\Documents\GitHub\LabCM20171\lab2activities\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            location="C:\Users\admin\Documents\UdeA\CompMovil\LabCM20171\lab2activities\build\outputs\apk\lab2activities-debug.apk"
+            type="SPLIT_MAIN" />
+        <artifact
+            location="C:\Users\admin\Documents\UdeA\CompMovil\LabCM20171\lab2activities\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\admin\Documents\GitHub\LabCM20171\lab2activities\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            location="C:\Users\admin\Documents\UdeA\CompMovil\LabCM20171\lab2activities\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\admin\Documents\GitHub\LabCM20171\lab2activities\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            location="C:\Users\admin\Documents\UdeA\CompMovil\LabCM20171\lab2activities\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\admin\Documents\GitHub\LabCM20171\lab2activities\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            location="C:\Users\admin\Documents\UdeA\CompMovil\LabCM20171\lab2activities\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\admin\Documents\GitHub\LabCM20171\lab2activities\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            location="C:\Users\admin\Documents\UdeA\CompMovil\LabCM20171\lab2activities\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\admin\Documents\GitHub\LabCM20171\lab2activities\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            location="C:\Users\admin\Documents\UdeA\CompMovil\LabCM20171\lab2activities\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\admin\Documents\GitHub\LabCM20171\lab2activities\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            location="C:\Users\admin\Documents\UdeA\CompMovil\LabCM20171\lab2activities\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\admin\Documents\GitHub\LabCM20171\lab2activities\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            location="C:\Users\admin\Documents\UdeA\CompMovil\LabCM20171\lab2activities\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\admin\Documents\GitHub\LabCM20171\lab2activities\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            location="C:\Users\admin\Documents\UdeA\CompMovil\LabCM20171\lab2activities\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\admin\Documents\GitHub\LabCM20171\lab2activities\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            location="C:\Users\admin\Documents\UdeA\CompMovil\LabCM20171\lab2activities\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1491347084175"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\admin\Documents\UdeA\CompMovil\LabCM20171\lab2activities\build\outputs\apk\lab2activities-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1491347161668"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\admin\Documents\UdeA\CompMovil\LabCM20171\lab2activities\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\admin\Documents\GitHub\LabCM20171\lab2activities\build\outputs\apk\lab2activities-debug.apk"
+            location="C:\Users\admin\Documents\UdeA\CompMovil\LabCM20171\lab2activities\build\outputs\apk\lab2activities-debug.apk"
             type="SPLIT_MAIN" />
     </build>
 

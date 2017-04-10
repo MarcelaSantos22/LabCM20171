@@ -10,4 +10,5 @@
     </string-array>
     <string name="boy">Masculino</string>
     <string name="girl">Femenino</string>
+    <string name="tel">Teléfono</string>
 </resources>

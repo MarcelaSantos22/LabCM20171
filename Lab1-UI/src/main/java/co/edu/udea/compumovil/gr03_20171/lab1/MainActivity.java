@@ -12,13 +12,13 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity {
 
 
-    static Persona persona;
+   // static Persona persona;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        //setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -54,9 +54,9 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public  class Persona{
+  /*  public  class Persona{
         //TODO: Crear los campos faltantes
-         String  nombre;
+         String nombre;
          String apellido;
          String fechaDeNacimiento;
          String sexo;
@@ -101,5 +101,5 @@ public class MainActivity extends AppCompatActivity {
         public void setEscolaridad(String escolaridad) {
             this.escolaridad = escolaridad;
         }
-    }
+    }*/
 }

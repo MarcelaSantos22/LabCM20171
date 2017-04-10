@@ -2,15 +2,17 @@ package co.edu.udea.compumovil.gr03_20171.lab1;
 
 import android.app.DatePickerDialog;
 import android.app.DialogFragment;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.AutoCompleteTextView;
 import android.widget.CheckBox;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -22,18 +24,14 @@ public class PersonalInfo extends AppCompatActivity implements DatePickerDialog.
     private int mMonth;
     private int mDay;
 
-    private TextView mDateDisplay;;
-    private AutoCompleteTextView countryAutoComplete;
-    private Spinner hobbieSpinner;
-    private EditText etName;
-    private EditText etlastName;
-    private RadioButton rbMale;
-    private RadioButton rbFemale;
-    private EditText etTelephone;
-    private EditText etAddress;
-    private EditText etEmail;
-    private CheckBox cbFavorite;
-
+    public RadioGroup rgSexo;
+    public TextView mDateDisplay;
+    public Spinner escolaridadSpinner;
+    public EditText etName;
+    public EditText etlastName;
+    public RadioButton rbMale;
+    public RadioButton rbFemale;
+    public String datos;
     public PersonalInfo() {
     }
 
@@ -47,35 +45,12 @@ public class PersonalInfo extends AppCompatActivity implements DatePickerDialog.
         etlastName=(EditText)findViewById(R.id.etApellido);
         rbMale=(RadioButton)findViewById(R.id.rbHombre);
         rbFemale=(RadioButton)findViewById(R.id.rbMujer);
+        escolaridadSpinner=(Spinner)findViewById(R.id.spnEscolaridad);
+        rgSexo = (RadioGroup) findViewById(R.id.rgSexo);
+        datos = new String();
     }
-    public void onClick(View v) {
 
-        switch (v.getId()) {
-            case R.id.btCambiarFecha:
-                DialogFragment datePickerFragment = new DateFragmentPicker();
-                datePickerFragment.show(getFragmentManager(), "datePicker");
-                break;
-            case R.id.btnNext:
 
-                Log.i("PersonalInfo","Mi nombre es: "+etName.getText().toString());
-                Log.i("PersonalInfo","Mi apellido es: "+etlastName.getText().toString());
-                Log.i("PersonalInfo","Mi fecha de nacimiento es: "+ mDateDisplay.getText().toString());
-
-                MainActivity.persona.setNombre(etName.getText().toString());
-                MainActivity.persona.setApellido(etlastName.getText().toString());
-                MainActivity.persona.setFechaDeNacimiento(mDateDisplay.getText().toString());
-                if(rbMale.isChecked()){
-                    MainActivity.persona.setSexo(getResources().getString(R.string.boy));
-                }else{
-                    MainActivity.persona.setSexo(getResources().getString(R.string.girl));
-                }
-                //TODO: Spinner escolaridad, Inicializar y obtener
-                //TODO: En vez de mostrar log, crear nueva actividad.
-                break;
-
-        }
-    }
-    @Override
     public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
         mYear = year;
         mMonth = monthOfYear;
@@ -83,11 +58,35 @@ public class PersonalInfo extends AppCompatActivity implements DatePickerDialog.
         updateDisplay();
     }
     private void updateDisplay() {
+        mDateDisplay.setText(new StringBuilder().append(mMonth + 1).append("/").append(mDay).append("/").append(mYear));
+    }
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.btCambiarFecha:
+                DialogFragment datePickerFragment = new DateFragmentPicker();
+                datePickerFragment.show(getFragmentManager(), "datePicker");
+                break;
+            case R.id.btnPersonalInfoNext:
+                String nombre = etName.getText().toString();
+                String apellido = etlastName.getText().toString();
+                String fecha = mDateDisplay.getText().toString();
+                String escolaridad = escolaridadSpinner.getSelectedItem().toString();
+                String selectedType;
+                if (rbMale.isChecked()) {
+                    selectedType = rbMale.getText().toString();
+                } else {
+                    selectedType = rbFemale.getText().toString();
+                }
 
-        mDateDisplay.setText(new StringBuilder()
-                // Month is 0 based so add 1
-                .append(mMonth + 1).append("/").append(mDay).append("/")
-                .append(mYear));
+                datos = datos + "NOMBRE COMPLETO: " + nombre + " " + apellido + "\n\n" + "FECHA DE NACIMIENTO: "+ fecha+ "\n\n"
+                                    +"SEXO: "+ selectedType + "\n\n" + "ESCOLARIDAD: "+ escolaridad + "\n\n";
+
+                Intent intent = new Intent(this, ContactInfo.class);
+                intent.putExtra("DATOS", datos);
+                startActivity(intent);
+                break;
+
+        }
     }
 
 }

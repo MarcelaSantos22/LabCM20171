@@ -713,7 +713,7 @@
     <string name="aboutDescription">El curso Computación Móvil introduce los conceptos básicos acerca del diseño y desarrollo de aplicaciones móviles. En el curso se tratan temas generales de computación móvil como arquitectura de dispositivos móviles y temas particulares en el desarrollo de aplicaciones en Android referentes a la arquitectura de software, manejo del framework de programación Android studio y desarrollo de interfaces de usuario utilizando Material Design.</string>
     <string name="aboutTitle">Computación Móvil</string>
     <string name="action_search">Search</string>
-    <string name="app_name">Events S.A</string>
+    <string name="app_name">co.edu.udea.compumovil.gr03_20171.lab3.Events S.A</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>

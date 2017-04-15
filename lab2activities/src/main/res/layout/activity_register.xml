@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo2"
-    tools:context="co.edu.udea.compumovil.gr03_20171.lab2activities.RegisterActivity"
+    tools:context="co.edu.udea.compumovil.gr03_20171.lab2activities.co.edu.udea.compumovil.gr03_20171.lab3.RegisterActivity"
    >
 
    <!-- <TextView

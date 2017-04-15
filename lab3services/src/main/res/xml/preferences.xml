@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="Perfil">
+
+        <EditTextPreference
+            android:dialogTitle="Nombre del usuario"
+            android:key="pref_username"
+            android:summary="@string/pref_username"
+            android:title="Nombre del usuario" />
+        <EditTextPreference
+            android:dialogTitle="Correo"
+            android:key="pref_email"
+            android:summary="@string/pref_email"
+            android:title="Email" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Sesión">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="pref_session"
+            android:title="Mantener sesión iniciada" />
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Notificaciones">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_auth_notification"
+            android:title="Autorizar las notificaciones" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:dependency="pref_auth_notification"
+            android:key="pref_sound_notification"
+            android:title="Activar el sonido para las notificaciones" />
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

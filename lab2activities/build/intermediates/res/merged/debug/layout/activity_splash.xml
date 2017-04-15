@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="co.edu.udea.compumovil.gr03_20171.lab2activities.SplashActivity">
+    tools:context="co.edu.udea.compumovil.gr03_20171.lab2activities.co.edu.udea.compumovil.gr03_20171.lab3.SplashActivity">
 
     <ImageView
         android:src="@drawable/logo"

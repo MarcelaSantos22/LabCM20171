@@ -92,9 +92,9 @@ public class EventsActivityRecycler extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         // Check which request we're responding to
         if (requestCode == RESULT_OK) {
-            Events evento;
+            co.edu.udea.compumovil.gr03_20171.lab3.Events evento;
             Log.i("HOLI", "RESULT_OK");
-            evento = new Events(data.getExtras().getString("nombre"), data.getExtras().getString("descripcion"),
+            evento = new co.edu.udea.compumovil.gr03_20171.lab3.Events(data.getExtras().getString("nombre"), data.getExtras().getString("descripcion"),
                     data.getExtras().getString("puntuacion"), data.getExtras().getString("responsable"),
                     data.getExtras().getString("fecha"), data.getExtras().getString("ubicacion"),
                     data.getExtras().getString("infoGeneral"), data.getExtras().getString("foto"));

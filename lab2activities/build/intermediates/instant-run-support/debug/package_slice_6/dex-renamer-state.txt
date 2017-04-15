@@ -1,4 +1,0 @@
-#Tue Apr 04 15:01:21 COT 2017
-base.0=C\:\\Users\\admin\\Documents\\UdeA\\CompMovil\\LabCM20171\\lab2activities\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_6
-renamed.0=classes.dex
-file.0=C\:\\Users\\admin\\Documents\\UdeA\\CompMovil\\LabCM20171\\lab2activities\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_6\\classes.dex

@@ -15,7 +15,7 @@ public class Events {
     private String ubicacion;
     private String infoGeneral;
 
-   /* public Events(String nombre, String descripcion, float puntuacion, String responsable, String fecha, String ubicacion, String infoGeneral, String foto) {
+   /* public co.edu.udea.compumovil.gr03_20171.lab3.Events(String nombre, String descripcion, float puntuacion, String responsable, String fecha, String ubicacion, String infoGeneral, String foto) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.puntuacion = puntuacion;

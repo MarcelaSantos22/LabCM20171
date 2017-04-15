@@ -1,7 +1,0 @@
-#Tue Apr 04 17:53:00 COT 2017
-base.0=C\:\\Users\\admin\\Documents\\UdeA\\CompMovil\\LabCM20171\\lab2activities\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_aa45b905aac5ce19f81cdcfb228f4de9b5dda0e5
-renamed.1=classes2.dex
-renamed.0=classes.dex
-file.1=C\:\\Users\\admin\\Documents\\UdeA\\CompMovil\\LabCM20171\\lab2activities\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_f06177508b80cc17d537163927ea3f69dcf92398\\classes.dex
-base.1=C\:\\Users\\admin\\Documents\\UdeA\\CompMovil\\LabCM20171\\lab2activities\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_f06177508b80cc17d537163927ea3f69dcf92398
-file.0=C\:\\Users\\admin\\Documents\\UdeA\\CompMovil\\LabCM20171\\lab2activities\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_aa45b905aac5ce19f81cdcfb228f4de9b5dda0e5\\classes.dex

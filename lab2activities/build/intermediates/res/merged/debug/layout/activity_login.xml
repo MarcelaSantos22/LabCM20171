@@ -4,7 +4,7 @@
     android:id="@+id/activity_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="co.edu.udea.compumovil.gr03_20171.lab2activities.LoginActivity"
+    tools:context="co.edu.udea.compumovil.gr03_20171.lab2activities.co.edu.udea.compumovil.gr03_20171.lab3.LoginActivity"
     android:weightSum="1"
     android:background="@drawable/fondo2">
 

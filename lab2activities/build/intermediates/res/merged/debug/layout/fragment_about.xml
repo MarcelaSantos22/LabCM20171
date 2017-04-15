@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="co.edu.udea.compumovil.gr03_20171.lab2activities.Fragments.AboutFragment">
+    tools:context="co.edu.udea.compumovil.gr03_20171.lab2activities.co.edu.udea.compumovil.gr03_20171.lab3.Fragments.AboutFragment">
 
     <LinearLayout
         android:layout_width="match_parent"

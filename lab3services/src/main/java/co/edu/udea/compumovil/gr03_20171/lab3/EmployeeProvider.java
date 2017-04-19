@@ -31,7 +31,7 @@ public class EmployeeProvider extends ContentProvider {
     @Nullable
     @Override
     public Cursor query(@NonNull Uri uri, @Nullable String[] projection, @Nullable String selection, @Nullable String[] selectionArgs, @Nullable String sortOrder) {
-        db = new DatabaseHelper(getContext());
+  /*      db = new DatabaseHelper(getContext());
 
         String UserName;
         users = db.getUsersName();
@@ -55,8 +55,8 @@ public class EmployeeProvider extends ContentProvider {
                 }
             }
         }
-
-        return matrixCursor;
+*/
+        return null;
     }
 
     @Nullable

@@ -44,8 +44,7 @@ public class SettingsActivity extends PreferenceActivity {
                     .unregisterOnSharedPreferenceChangeListener(this);
         }
 
-        public void onSharedPreferenceChanged(SharedPreferences sharedPreferences,
-                                              String key) {
+        public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
             updatePrefSummary(findPreference(key));
         }
 

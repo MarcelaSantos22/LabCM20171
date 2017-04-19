@@ -35,6 +35,13 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp">
 
+            <TextView android:id="@+id/android_device_ip_address"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="ip address"
+                android:textColor="#ffffff"
+                android:textSize="20dp"/>
+
             <EditText android:id="@+id/etUserLogin"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"

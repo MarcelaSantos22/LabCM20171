@@ -20,12 +20,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     SQLiteDatabase db;
     Cursor cursor;
 
-    private static final String TABLE_CREATE_USER = "CREATE TABLE users (usuario TEXT PRIMARY KEY, contraseña TEXT NOT NULL, " +
-            "correo TEXT NOT NULL, edad TEXT NOT NULL, foto BLOB)";
+ /*   private static final String TABLE_CREATE_USER = "CREATE TABLE users (usuario TEXT PRIMARY KEY, contraseña TEXT NOT NULL, " +
+            "correo TEXT NOT NULL, edad TEXT NOT NULL, foto BLOB)";*/
 
     private static final String TABLE_CREATE_EVENT = "CREATE TABLE events (codigo INTEGER PRIMARY KEY AUTOINCREMENT, " +
-            "evento TEXT NOT NULL, descripcion TEXT NOT NULL, puntuacion , responsable ," +
-            "fecha , ubicacion , infoGeneral , foto BLOB);";
+            "evento TEXT NOT NULL, descripcion TEXT NOT NULL, puntuacion FLOAT, responsable TEXT," +
+            "fecha TEXT, ubicacion TEXT, infoGeneral TEXT, foto BLOB);";
 
 
     public DatabaseHelper(Context context) {
@@ -34,7 +34,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(TABLE_CREATE_USER);
+        //db.execSQL(TABLE_CREATE_USER);
         db.execSQL(TABLE_CREATE_EVENT);
         this.db = db;
     }
@@ -67,13 +67,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         return resp;
     }
-    public void insertImageUser(byte[] imageBytes) {
+   /* public void insertImageUser(byte[] imageBytes) {
         ContentValues cv = new ContentValues();
         cv.put("foto", imageBytes);
         db.insert("users", null, cv);
-    }
+    }*/
 
-    public ArrayList<String> getUsersName(){
+  /*  public ArrayList<String> getUsersName(){
         db = this.getReadableDatabase();
         ArrayList<String> usersName = new ArrayList<String>();
         cursor = db.query("users",null,null,null,null,null,null);
@@ -91,8 +91,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.close();
 
         return usersName;
-    }
-
+    }*/
+/*
      public String searchPass(String user){
          db = this.getReadableDatabase();
          String query = "SELECT usuario, contraseña FROM users";
@@ -109,14 +109,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
              }while (cursor.moveToNext());
          }
          return pass;
-     }
+     }*/
     public Cursor getAllEvents() {
         db = this.getReadableDatabase();
         cursor = db.query("events",null,null,null,null,null,null);
 
         return cursor;
     }
-    public ArrayList<String> searchInfoUser(String user){
+   /* public ArrayList<String> searchInfoUser(String user){
         db = this.getReadableDatabase();
         ArrayList<String> arList = new ArrayList<String>();
         String query = "SELECT usuario, edad, correo FROM users WHERE usuario=?";
@@ -140,12 +140,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.close();
 
         return arList;
-    }
+    }*/
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        String queryUs = "DROP TABLE IF EXISTS users";
+       // String queryUs = "DROP TABLE IF EXISTS users";
         String queryEv = "DROP TABLE IF EXISTS events";
-        db.execSQL(queryUs);
+       // db.execSQL(queryUs);
         db.execSQL(queryEv);
         this.onCreate(db);
     }

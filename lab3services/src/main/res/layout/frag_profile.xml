@@ -7,12 +7,12 @@
 
     <com.pkmmte.view.CircularImageView
         android:id="@+id/imvShowImage"
-        android:layout_width="154dp"
-        android:layout_height="163dp"
+        android:layout_width="120dp"
+        android:layout_height="121dp"
         android:layout_centerVertical="true"
         android:layout_gravity="center"
         android:layout_marginBottom="30dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/ic_event_note_black_24dp"
         app:border="true"
         app:border_color="@android:color/white"
@@ -48,7 +48,8 @@
                       android:layout_marginTop="40dp"
                       android:layout_marginBottom="30dp" />-->
 
-                <TextView
+
+                <EditText
                     android:id="@+id/etShowName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -61,13 +62,15 @@
                     android:layout_marginRight="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="20dp"
-                    android:padding="5dp"/>
+                    android:padding="5dp"
+                    android:inputType="textPersonName|textCapWords"/>
 
-                <TextView
+                <EditText
                     android:id="@+id/etShowUsername"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed"
+                    android:editable="false"
                     android:gravity="center"
                     android:hint="Username"
                     android:textColor="#000000"
@@ -77,7 +80,7 @@
                     android:layout_marginLeft="10dp"
                     android:padding="5dp"/>
 
-                <TextView
+                <EditText
                     android:id="@+id/etShowAge"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -89,9 +92,10 @@
                     android:background="#ffffff"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:padding="5dp"/>
+                    android:padding="5dp"
+                    android:inputType="number"/>
 
-                <TextView
+                <EditText
                     android:id="@+id/etShowEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -103,23 +107,67 @@
                     android:background="#ffffff"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:padding="5dp"/>
+                    android:padding="5dp"
+                    android:inputType="textEmailAddress"/>
 
-                <Button
-                    android:id="@+id/btnSubirImagen"
-                    android:layout_width="176dp"
+                <EditText
+                    android:id="@+id/etShowPassword"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginBottom="10dp"
-                    android:onClick=""
-                    android:background="@drawable/shape"
-                    android:backgroundTint="#ffffff"
-                    android:textColor="#4D0D64"
-                    android:text="Subir foto"
                     android:fontFamily="sans-serif-condensed"
-                    android:textSize="18dp"
-                    android:textStyle="bold"/>
+                    android:gravity="center"
+                    android:hint="Password"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:inputType="numberPassword"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:weightSum="1">
+
+                    <Button
+                        android:id="@+id/btnSubirImagen"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape"
+                        android:backgroundTint="#ffffff"
+                        android:textColor="#4D0D64"
+                        android:text="Subir foto"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.36"
+                        android:onClick=""/>
+
+                    <Button
+                        android:id="@+id/btnActualizar"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape"
+                        android:backgroundTint="#ffffff"
+                        android:textColor="#4D0D64"
+                        android:text="Actualizar"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp"
+                        android:onClick=""/>
+
+                </LinearLayout>
+
+
 
             </LinearLayout>
         </ScrollView>

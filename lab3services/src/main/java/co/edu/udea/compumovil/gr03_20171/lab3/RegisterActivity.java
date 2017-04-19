@@ -35,8 +35,10 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText nombre;
 
     private RequestQueue queue;
-    private final String URL = "http://192.168.1.51:3000/api/users"; //Cuando se trabaja con Servidor
-    // urlPost = "http://" + IpDispositivoServicio.ip + ":3000/api/users";
+    private final String URL = "http://192.168.25.89:3000/api/users";
+   //private final String URL = "http://192.168.1.51:3000/api/users";
+   //private final String URL = "http:// 10.1.45.169:3000/api/users";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

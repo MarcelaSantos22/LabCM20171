@@ -105,6 +105,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/textView4"
                 android:text="fecha"
+                android:maxLength="10"
                 android:textColor="#000000"
                 android:textSize="16dp"
                 android:typeface="serif" />
@@ -156,7 +157,6 @@
                 android:elevation="5dp"
                 android:isIndicator="true"
                 android:numStars="5"
-
                 android:scaleX="0.6"
                 android:scaleY="0.6"
                 android:tag="puntuacion" />
@@ -173,7 +173,8 @@
                 android:textColor="#ffffff"
                 android:padding="15dp"
                 android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:onClick="borrarEvento"/>
         </RelativeLayout>
     </ScrollView>
 </LinearLayout>

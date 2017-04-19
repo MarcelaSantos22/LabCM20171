@@ -29,6 +29,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import co.edu.udea.compumovil.gr03_20171.lab3.Fragments.DateFragmentPicker;
+import data.DatabaseHelper;
 import data.Events;
 
 
@@ -49,9 +50,11 @@ public class AddEventsActivity extends AppCompatActivity implements DatePickerDi
     private int mMonth;
     private int mDay;
 
-    // private DatabaseHelper db = new DatabaseHelper(this);
+    private DatabaseHelper db = new DatabaseHelper(this);
     private RequestQueue queue;
-    private final String URL = "http://192.168.1.51:3000/api/events";
+    private final String URL = "http://192.168.25.89:3000/api/events";
+    //private final String URL = "http:// 10.1.45.169:3000/api/events";
+   // private final String URL = "http://192.168.1.51:3000/api/events";
 
 
     @Override
@@ -106,7 +109,7 @@ public class AddEventsActivity extends AppCompatActivity implements DatePickerDi
                     Toast.makeText(AddEventsActivity.this, "Llene todos los campos", Toast.LENGTH_SHORT).show();
                 } else {
                     addEvent(nameEvent,description,punt,location,responsable,date,information);
-                    /*Events event = new Events();
+                    Events event = new Events();
 
                     event.setNombre(nameEvent);
                     event.setDescripcion(description);
@@ -117,7 +120,7 @@ public class AddEventsActivity extends AppCompatActivity implements DatePickerDi
                     event.setResponsable(responsable);
 
                     long resp = db.insertEvents(event);
-                    Log.d("resp: ", String.valueOf(resp));*/
+                    Log.d("resp: ", String.valueOf(resp));
                 }
                 break;
             case R.id.btnFecha:
@@ -136,10 +139,10 @@ public class AddEventsActivity extends AppCompatActivity implements DatePickerDi
                         Log.d(response, "onResponse: ");
                         Toast.makeText(AddEventsActivity.this, "Evento creado correctamente", Toast.LENGTH_SHORT).show();
 
-                       /* Intent intent = new Intent(AddEventsActivity.this, EventsActivity.class);
+                        Intent intent = new Intent(AddEventsActivity.this, EventsActivity.class);
                         intent.putExtra("usuario", responsable);
                         intent.putExtra("fragment", "1");
-                        startActivity(intent);*/
+                        startActivity(intent);
                     }
                 }, new Response.ErrorListener() {
             @Override
@@ -150,7 +153,6 @@ public class AddEventsActivity extends AppCompatActivity implements DatePickerDi
                 }
                 Log.d(error.toString(), "onErrorResponse: ");
                 Toast.makeText(AddEventsActivity.this, "No se pudo crear el evento", Toast.LENGTH_SHORT).show();
-                //username.setText("");
             }
         })
         {
@@ -165,7 +167,6 @@ public class AddEventsActivity extends AppCompatActivity implements DatePickerDi
                 params.put("responsable", responsable);
                 params.put("fecha", fecha);
                 params.put("infoGeneral", info);
-
 
                 Log.d(String.valueOf(params), "params: ");
 

@@ -22,16 +22,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import com.android.volley.Request;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonObjectRequest;
-import com.bumptech.glide.Glide;
-import com.google.gson.Gson;
-
-import org.json.JSONObject;
 
 import co.edu.udea.compumovil.gr03_20171.lab3.Fragments.AboutFragment;
 import co.edu.udea.compumovil.gr03_20171.lab3.Fragments.EventsRecyclerFragment;
@@ -43,6 +33,9 @@ public class EventsActivity extends AppCompatActivity
     private Toolbar toolbar;
     private SearchView searchView;
     private TextView nameUser, email;
+    private FloatingActionButton fab;
+
+    private Context context;
     String nombre;
     SharedPreferences.Editor editor;
 
@@ -51,12 +44,20 @@ public class EventsActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_events);
 
-
-
         Intent intent = getIntent();
         String frag = intent.getStringExtra("fragment");
-
-
+        if (frag != null) {
+            if (frag.equals("1")) {
+                Fragment fragment = null;
+                fragment = new EventsRecyclerFragment();
+                if (fragment != null) {
+                    FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                    ft.replace(R.id.content_frame, fragment);
+                    ft.addToBackStack("fragment");
+                    ft.commit();
+                }
+            }
+        }
 
         nameUser = (TextView) findViewById(R.id.tvNameUser);
         email =(TextView) findViewById(R.id.tvEmail);
@@ -89,7 +90,7 @@ public class EventsActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -159,12 +160,15 @@ public class EventsActivity extends AppCompatActivity
 
         switch (id){
             case R.id.nav_eventos:
+                fab.setVisibility(View.VISIBLE);
                 fragment = new EventsRecyclerFragment();
                 break;
             case R.id.nav_info:
+                fab.setVisibility(View.INVISIBLE);
                 fragment= new AboutFragment();
                 break;
             case R.id.nav_perfil:
+                fab.setVisibility(View.INVISIBLE);
                 fragment = new ProfileFragment();
                 break;
             case R.id.nav_sesion:

@@ -31,7 +31,7 @@
             android:textSize="30dp"
             android:textStyle="bold"
             android:typeface="serif"
-            android:layout_alignParentEnd="true" />
+            android:layout_alignParentEnd="true"/>
 
         <RatingBar
             android:id="@+id/event_rating"
@@ -39,13 +39,14 @@
             android:layout_height="40dp"
             android:isIndicator="true"
             android:numStars="5"
-            android:elevation="5dp"
-            android:tag="puntuacion"
+            android:elevation="10dp"
             android:scaleX="0.5"
             android:scaleY="0.5"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="52dp" />
+            android:layout_marginTop="52dp"
+            android:progressTint="@color/colorRating"
+            style="@style/Widget.AppCompat.RatingBar"/>
 
         <TextView
             android:id="@+id/event_description"

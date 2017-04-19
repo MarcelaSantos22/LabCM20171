@@ -126,7 +126,7 @@
                         android:drawablePadding="10dp"
                         android:inputType="date"
                         android:imeOptions="actionDone"
-                        android:singleLine="true"/>
+                        android:singleLine="true" />
 
                     <Button
                         android:id="@+id/btnFecha"
@@ -146,7 +146,7 @@
                     android:layout_height="wrap_content"
                     android:background="#ffffff"
                     android:hint="Informacion general"
-                    android:inputType="textPersonName|textLongMessage"
+                    android:inputType="textPersonName|textLongMessage|textCapSentences"
                     android:padding="10dp"
                     android:typeface="serif"
                     android:drawableLeft="@drawable/ic_format_align_justify_black_24dp"
@@ -166,7 +166,6 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="20dp"
                         android:background="#ffffff"
                         android:padding="10dp"
                         android:text="Puntaje:"

@@ -2,12 +2,15 @@ package co.edu.udea.compumovil.gr03_20171.lab3;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.preference.PreferenceManager;
+import android.text.format.Formatter;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -20,20 +23,22 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.ArrayList;
 
 public class LoginActivity extends AppCompatActivity {
     private EditText usuario;
     private EditText contraseña;
+    TextView textView;
 
     JsonObjectRequest jsonObjectRequest;
     RequestQueue requestQueue;
-    private final String URL = "http://192.168.1.51:3000/api/users"; //Cuando se trabaja con Servidor
+    private final String URL = "http://192.168.25.89:3000/api/users";
+   // private final String URL = "http://192.168.1.51:3000/api/users";
+   //private final String URL = "http:// 10.1.45.169:3000/api/users";
+
+
 
     private String USERNAME = "username", PASSWORD = "password";
 
-    //DatabaseHelper helper = new DatabaseHelper(this);
-   // ArrayList<String> infoUs;
     SharedPreferences sharedPref;
     SharedPreferences.Editor editor;
 
@@ -46,12 +51,17 @@ public class LoginActivity extends AppCompatActivity {
         contraseña = (EditText) findViewById(R.id.etPasswordLogin);
         sharedPref = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
 
+        textView = (TextView) findViewById(R.id.android_device_ip_address);
+        WifiManager wifiManager = (WifiManager) getApplicationContext().getSystemService(WIFI_SERVICE);
+        String ipAddress = Formatter.formatIpAddress(wifiManager.getConnectionInfo().getIpAddress());
+        textView.setText("Your Device IP Address: " + ipAddress);
 
     }
 
     public void onClickLogin(View v) {
         switch (v.getId()) {
             case R.id.btnIniciarSesion:
+                Log.d("entre a login", "onClickLogin: ");
                 String user = usuario.getText().toString();
                 String pass = contraseña.getText().toString();
                 loginProcess(user, pass);
@@ -65,6 +75,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public void loginProcess(final String user, final String pass) {
         requestQueue = Volley.newRequestQueue(getApplicationContext());
+        Log.d("Entre a login process", "loginProcess: ");
 
         jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,
                 URL.concat("/").concat(user), null,
@@ -82,24 +93,23 @@ public class LoginActivity extends AppCompatActivity {
                                 editor.putString(USERNAME, user);
                                 editor.putString(PASSWORD, pass);
                                 editor.apply();
-                                String edad = response.getString("edad");
+
                                 String email = response.getString("email");
-                                String nombre = response.getString("nombre");
 
-                                Log.d(String.valueOf(edad), "response: ");
-                                Log.d(String.valueOf(email), "response: ");
-                                Log.d(String.valueOf(nombre), "response: ");
+                                /*String edad = response.getString("edad");
 
+                                String nombre = response.getString("nombre");*/
 
                                 Intent intent = new Intent(LoginActivity.this, EventsActivity.class);
                                 intent.putExtra("usuario", user);
-                                intent.putExtra("nombre", nombre);
-                                intent.putExtra("edad", edad);
                                 intent.putExtra("email", email);
+                               /* intent.putExtra("nombre", nombre);
+                                intent.putExtra("edad", edad);
+
+                                intent.putExtra("pass",password);*/
 
                                 startActivity(intent);
                             }
-                            //Log.d(String.valueOf(user), "user: ");
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
@@ -109,6 +119,8 @@ public class LoginActivity extends AppCompatActivity {
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
+                        Log.d("error", "onResponse: ");
+
                         Toast.makeText(LoginActivity.this, "El usuario no existe", Toast.LENGTH_SHORT).show();
                     }
                 });
@@ -124,8 +136,7 @@ public class LoginActivity extends AppCompatActivity {
         pass = sharedPref.getString(PASSWORD, "");
 
         if (isUserLogged) {
-            // Do something for the logged user
-            loginProcess(user, pass);
+           loginProcess(user, pass);
         }
     }
 
